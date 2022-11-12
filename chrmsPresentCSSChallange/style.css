@@ -1,0 +1,54 @@
+body {
+  background-color: #ac474b;
+  display: grid;
+  place-content: center;
+  height: 100vh;
+}
+
+.grid div {
+  background-color: white;
+  width: 60px;
+  height: 60px;
+}
+
+.grid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 60px 60px;
+}
+
+.rogalik {
+  position: relative;
+}
+
+.rogalik::before {
+  transition: 0.5s all ease-in-out;
+  position: absolute;
+  content: " ";
+  border: 10px solid white;
+  padding: 10px;
+  top: -60px;
+  border-radius: 50%;
+}
+
+.left::before {
+  left: 65px;
+  border-bottom-left-radius: 0;
+}
+
+.right::before {
+  left: 35px;
+  border-bottom-right-radius: 0;
+}
+
+.holder:hover .rogalik::before {
+  transform: translateY(10px);
+}
+
+.holder {
+  transition: 0.5s all ease-in-out;
+}
+
+.holder:active {
+  scale: 0.9;
+}
