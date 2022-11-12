@@ -1,0 +1,92 @@
+html,
+body {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  background-color: #121212;
+  color: #fff;
+  font-family: "Playfair Display", Arial, Helvetica, sans-serif;
+  height: 100vh;
+}
+.unsplash {
+  margin: 0 auto;
+  margin-top: auto;
+}
+.unsplash a {
+  color: #3acfa2;
+}
+
+.holder {
+  margin: auto;
+  width: 300px;
+  height: 300px;
+  border-radius: 0.5em;
+  position: relative;
+  overflow: hidden;
+}
+
+.holder img {
+  width: 300px;
+  height: 300px;
+  transition: all 0.7s ease-in-out;
+  scale: 1;
+}
+
+.mask {
+  width: 300px;
+  height: 300px;
+  background-color: #ffd586;
+  display: flex;
+  flex-direction: column;
+  color: #121212;
+
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  transition: all 0.7s ease-in-out;
+}
+
+.mask h2 {
+  text-align: center;
+  font-size: 2.5em;
+  margin: auto 0.5em;
+  margin-bottom: 0;
+  transition: all 0.7s ease-in-out;
+  scale: 0;
+}
+
+.mask p {
+  font-size: 1.5em;
+  text-align: center;
+  transition: all 0.7s ease-in-out;
+  scale: 0;
+}
+
+.mask a {
+  color: #fff;
+  background-color: #121212;
+  border: 0.1em solid rgba(255, 255, 255, 0.16);
+  border-radius: 0.5em;
+  padding: 0.5em 2em;
+  margin: auto;
+  text-decoration: none;
+  text-align: center;
+  transition: all 0.7s ease-in-out;
+  scale: 0;
+}
+
+.holder:hover img {
+  scale: 10;
+  opacity: 0;
+}
+
+.holder:hover .mask {
+  opacity: 1;
+}
+
+.holder:hover h2,
+.holder:hover a,
+.holder:hover p {
+  scale: 1;
+}

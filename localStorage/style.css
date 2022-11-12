@@ -1,0 +1,26 @@
+body {
+  margin: 0;
+  background-color: #121212;
+  color: #fff;
+  font-family: "Roboto Slab", serif;
+  display: grid;
+  place-content: center;
+  height: 80vh;
+}
+
+div {
+  border: 0.3em solid #212121;
+  padding: 2em 2em 0.5em 2em;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.351);
+}
+
+button {
+  border: none;
+  width: 100px;
+  height: 40px;
+  font-size: 1em;
+  font-weight: 600;
+}

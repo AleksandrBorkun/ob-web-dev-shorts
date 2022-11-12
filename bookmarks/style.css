@@ -1,0 +1,66 @@
+body {
+  background-color: #212121;
+  color: #fff;
+}
+
+.content {
+  display: none;
+  padding: 0 1em;
+  height: 600px;
+  width: 80vw;
+  overflow-y: scroll;
+}
+
+.active {
+  display: block;
+  animation: fadeIn 0.8s;
+}
+
+.tabsHeader {
+  border: 0.2em solid #5b5b5b;
+  width: 80vw;
+  height: 3em;
+  display: flex;
+}
+
+main {
+  display: grid;
+  place-content: center;
+  width: 100vw;
+}
+
+.tab {
+  width: 10em;
+  border: none;
+  background-color: transparent;
+  color: white;
+  font-size: 1em;
+}
+
+.tab:hover {
+  cursor: pointer;
+  background-color: #5b5b5b;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.subscribe {
+  font-size: 1em;
+  background-color: rgb(225, 73, 73);
+  color: #fff;
+  border: none;
+  padding: 0.5em;
+  border-radius: 0.1em;
+}
+
+.subscribe:hover {
+  background-color: black;
+  cursor: pointer;
+}

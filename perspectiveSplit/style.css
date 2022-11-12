@@ -1,0 +1,114 @@
+html,
+body,
+h3 {
+  margin: 0;
+}
+
+body {
+  background-color: #262626;
+  width: 100vw;
+  height: 100vh;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu {
+  font-size: 2em;
+}
+.Menu-list-item {
+  position: relative;
+  color: transparent;
+  cursor: pointer;
+  color: transparent;
+  /* color: rgb(243, 150, 57); */
+}
+
+.Menu-list-item::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 49%;
+  left: -10%;
+  right: -10%;
+  height: 4px;
+  border-radius: 4px;
+  margin-top: -(4px / 2);
+  background: #ff2c75;
+  transform: scale(1);
+  /* transition: transform 0.8s cubic-bezier(0.16, 1.08, 0.38, 0.98); */
+  z-index: 1;
+}
+
+.Mask {
+  display: block;
+  position: absolute;
+  overflow: hidden;
+  color: #ff2c75;
+  top: 0;
+  height: 49%;
+  color: #fff;
+  transform: skewX(12deg) translateX(1px);
+  /* transition: all 0.8s cubic-bezier(0.16, 1.08, 0.38, 0.98); */
+}
+
+.Mask span {
+  display: block;
+}
+
+.Mask.bottom {
+  top: 20px;
+  /* left: 14px; */
+  height: 40px;
+  transform: skewX(12deg) translateX(-1px);
+}
+
+.Mask.bottom span {
+  transform: translateY(-49%);
+}
+
+.option {
+  text-decoration: none;
+  color: rgb(243, 150, 57);
+  /* color: transparent; */
+  position: relative;
+}
+
+.option span {
+  position: absolute;
+  color: #fff;
+  left: 0;
+  display: inline-block;
+}
+
+#upper {
+  left: -4px;
+  top: -4px;
+  z-index: 2;
+}
+
+#upper::after {
+  content: " ";
+  position: absolute;
+  border: 2px solid brown;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 50%;
+  overflow: hidden;
+}
+
+.center {
+  background-color: #1d1d1d;
+  height: 300px;
+  width: 300px;
+  display: flex;
+}
+
+h3 {
+  color: #fff;
+  font-size: 3em;
+  margin: auto;
+}

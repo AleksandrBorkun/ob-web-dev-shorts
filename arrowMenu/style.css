@@ -1,0 +1,43 @@
+html,
+body {
+  font-family: Oxanium, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol";
+}
+
+body {
+  background-color: #262626;
+  width: 100vw;
+  height: 100vh;
+  color: #fff;
+  display: grid;
+  place-content: center;
+}
+
+.menu {
+  font-size: 2em;
+  display: flex;
+  flex-direction: column;
+}
+
+.menu a {
+  text-decoration: none;
+  color: orange;
+  line-height: 1.5em;
+  transition: margin 0.2s ease-in-out;
+}
+
+.menu a:hover,
+.menu a:focus {
+  text-shadow: 0 0 5px red;
+  margin-left: 0.5em;
+  outline: none;
+  position: relative;
+}
+
+.menu a::before {
+  position: absolute;
+  left: -1em;
+  content: ">";
+  color: transparent;
+}

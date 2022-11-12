@@ -1,0 +1,27 @@
+html,
+body,
+h3 {
+  margin: 0;
+}
+
+.holder {
+  background-color: #262626;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.center {
+  background-color: #1d1d1d;
+  height: 300px;
+  width: 300px;
+  display: flex;
+}
+
+h3 {
+  color: #fff;
+  font-size: 3em;
+  margin: auto;
+}
