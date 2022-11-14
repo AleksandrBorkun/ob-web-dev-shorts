@@ -16,6 +16,14 @@ html[data-theme="dark"] {
   --button-text-color: yellow;
 }
 
+html.color-theme-in-transition,
+html.color-theme-in-transition *,
+html.color-theme-in-transition *:before,
+html.color-theme-in-transition *:after {
+  transition: all 750ms !important;
+  transition-delay: 0 !important;
+}
+
 h1,
 h2 {
   color: var(--primary-text);
