@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  color: white;
+}
+
+body {
+  background-color: #121212;
+  display: grid;
+  place-content: center;
+  min-height: 100vh;
+}
+
+h1 {
+  margin-bottom: 2em;
+}
+.sphere {
+  width: 250px;
+  height: 250px;
+  background-color: #181818;
+  border-radius: 50%;
+  display: grid;
+  place-content: center;
+  box-shadow: rgb(22, 22, 34) 20px 20px 40px;
+}
+.arrow-up {
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+
+  border-bottom: 50px solid blueviolet;
+  animation: decide 5s infinite;
+  position: relative;
+  opacity: 0;
+}
+
+h3 {
+  position: absolute;
+  left: -15px;
+  bottom: -40px;
+  transition: all 1s ease-in;
+  opacity: 0;
+}
+
+.display {
+  opacity: 1;
+}
+
+@keyframes decide {
+  0% {
+    transform: rotateY(-30deg);
+  }
+  50% {
+    transform: rotateY(30deg);
+  }
+  100% {
+    transform: rotateY(-30deg);
+  }
+}
