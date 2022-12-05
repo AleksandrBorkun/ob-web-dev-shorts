@@ -1,0 +1,17 @@
+body {
+  background: #e1e1e1;
+  color: black;
+}
+
+@media (min-width: 600px) {
+  body {
+    text-align: center;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background: #121212;
+    color: rgba(255, 255, 255, 0.9);
+  }
+}
