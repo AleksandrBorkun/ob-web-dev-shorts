@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="index.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.2.1/axios.min.js"
+      integrity="sha512-zJYu9ICC+mWF3+dJ4QC34N9RA0OVS1XtPbnf6oXlvGrLGNB8egsEzu/5wgG90I61hOOKvcywoLzwNmPqGAdATA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="addFriend" id="addFriend">
+      <input type="text" id="newFriend" placeholder="Name" />
+      <button type="submit">Add Friend</button>
+    </form>
+
+    <form action="removeFriend" id="removeFriend">
+      <input type="text" id="notFriend" placeholder="Name" />
+      <button type="submit">Del Friend</button>
+    </form>
+
+    <h1>Friend List from Express</h1>
+    <ul id="list"></ul>
+  </body>
+</html>

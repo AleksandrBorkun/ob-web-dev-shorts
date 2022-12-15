@@ -1,0 +1,60 @@
+html {
+  --background: #121212;
+  --section: #181818;
+  --primary-text: white;
+  --secondary-text: #b3b3b3;
+  --button-background: #324e59;
+  --button-text-color: yellow;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--primary-text);
+}
+
+* {
+  margin: 0;
+}
+h1 {
+  text-align: center;
+}
+ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  place-content: center;
+  margin: 1rem;
+}
+li {
+  font-size: 2rem;
+}
+
+form {
+  display: flex;
+  align-items: center;
+  margin: 1rem;
+  gap: 1rem;
+}
+
+form input {
+  height: auto;
+  border: none;
+  border-radius: 10px;
+  font-size: 2rem;
+  padding: 0.5rem 1rem;
+  width: 40%;
+}
+
+button {
+  background-color: transparent;
+  border: 1px solid var(--primary-text);
+  color: var(--primary-text);
+  padding: 0.3em 0.6em;
+  border-radius: 0.4em;
+  font-weight: 700;
+  font-size: 2em;
+}
+
+button:hover {
+  background-color: var(--button-background);
+  color: var(--button-text-color);
+}
