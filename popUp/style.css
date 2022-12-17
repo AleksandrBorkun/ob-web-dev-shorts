@@ -1,0 +1,89 @@
+html {
+  --background: #121212;
+  --section: #181818;
+  --primary-text: white;
+  --secondary-text: #b3b3b3;
+  --button-background: #324e59;
+  --button-text-color: yellow;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--primary-text);
+  text-align: center;
+}
+
+* {
+  margin: 0;
+}
+
+form input {
+  height: 2rem;
+  margin-bottom: 1rem;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  padding-left: 1rem;
+}
+
+h2 {
+  margin: 1rem 0;
+}
+
+.holder {
+  display: none;
+  flex-direction: column;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.holder.active {
+  display: flex;
+}
+
+button {
+  background-color: transparent;
+  border: 1px solid var(--primary-text);
+  color: var(--primary-text);
+  padding: 0.3em 0.6em;
+  border-radius: 0.4em;
+  font-weight: 700;
+  font-size: 2em;
+}
+
+button:hover {
+  background-color: var(--button-background);
+  color: var(--button-text-color);
+}
+
+.closeBtn {
+  position: absolute;
+  border: none;
+  right: 0;
+  top: 0;
+}
+
+.popUp {
+  display: none;
+  padding: 3rem 0;
+  background-color: #181818;
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.thanks {
+  display: none;
+}
+
+.popUpBtn {
+  margin-top: 2rem;
+}
+
+.active {
+  display: block;
+}
