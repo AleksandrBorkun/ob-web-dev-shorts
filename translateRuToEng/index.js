@@ -10,7 +10,7 @@ const sub = fs.readFileSync("captions.sbv").toString();
 
 const timeLineRegEx = /^(\d:\d{2}:\d{2}.\d{3}),(\d:\d{2}:\d{2}.\d{3})/gm;
 const txtRegEx =
-  /^([а-яА-Яa-zA-Z\[][а-яА-Я\w  \-\[\]\.\"\']+\s([а-яА-Яa-zA-Z][а-яА-Я\w  \-\[\]\.\"\']+)?)/gm;
+  /^([а-яА-Яa-zA-Z\[\"\.][а-яА-Я\w  \-\[\]\.,\"\']+\s([а-яА-Яa-zA-Z\[][а-яА-Я\w  \-\[\]\.,\"\']+)?)/gm;
 
 const timestamps = sub.match(timeLineRegEx);
 const phrases = sub.match(txtRegEx);
@@ -18,6 +18,8 @@ const phrases = sub.match(txtRegEx);
 let engSubTxt = "";
 let index = 0;
 
+if (timestamps.length !== phrases.length)
+  throw "Length og phases and timestamps are different. Please adjust you regex (you can check them on https://regex101.com/)";
 const intervalID = setInterval(addTranslation, pause);
 
 async function addTranslation() {
