@@ -15,7 +15,7 @@ function main() {
   let monster = new Monster(1);
 
   const getHP = () =>
-    `Victory!\nYou have ${hero.hp} HP and ${hero.power} power, and ${monster.name} has ${monster.hp} HP and ${monster.power} power`;
+    `You have ${hero.hp} HP and ${hero.power} power, and ${monster.name} has ${monster.hp} HP and ${monster.power} power`;
 
   const getNewMonsterName = () =>
     `Your new opponent ${monster.name}, with ${monster.hp} HP`;
@@ -28,8 +28,9 @@ function main() {
   while (hero.isAlive()) {
     if (hero.lv >= 11) {
       console.log(
-        `You killed everyone! And know no one will remember your name!\n You killed ${count} monsters.`
+        `Victory!\nYou killed everyone! And know no one will remember your name!\n You killed ${count} monsters.`
       );
+      return;
     }
     console.log("Select defence part:\n1. HEAD\n2. BODY\n3. LEGS");
     const defence = +promt();
