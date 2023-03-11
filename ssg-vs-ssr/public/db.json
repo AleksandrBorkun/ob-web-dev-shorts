@@ -1,0 +1,14 @@
+{
+  "alex": {
+    "name": "Alex",
+    "age": 45678
+  },
+  "jack": {
+    "name": "Jack",
+    "age": 55
+  },
+  "mira": {
+    "name": "Mira",
+    "age": 5
+  }
+}
